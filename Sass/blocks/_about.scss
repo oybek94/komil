@@ -1,4 +1,9 @@
+.about {
+  margin-bottom: 187px;
+}
+
 .about__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,4 +12,5 @@
   background-image: url("/img/idea.svg");
   background-repeat: no-repeat;
   background-position-x: 90%;
+  background-size: 465px;
 }

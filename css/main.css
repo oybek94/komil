@@ -747,7 +747,12 @@ body.lock {
   color: #2741d0;
 }
 
+.about {
+  margin-bottom: 187px;
+}
+
 .about__container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -765,6 +770,7 @@ body.lock {
   background-image: url("/img/idea.svg");
   background-repeat: no-repeat;
   background-position-x: 90%;
+  background-size: 465px;
 }
 
 .desc {
@@ -780,10 +786,70 @@ body.lock {
   line-height: 115%;
   color: #262626;
   margin-bottom: 16px;
+  margin-top: 30px;
 }
 
 .main-title__desc {
   width: 547px;
   margin-bottom: 32px;
+}
+
+.advantages {
+  position: absolute;
+  bottom: -115px;
+  right: 0;
+  width: 712px;
+  margin-right: 48px;
+  padding: 80px 48px 32px 48px;
+  background: #f4f7fa;
+  -webkit-box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+          box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+  border-radius: 10px;
+}
+
+.advantages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-item {
+  position: relative;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.advantages-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.advantages-item:first-child::before {
+  background-image: url("/img/icons/time24.svg");
+  width: 50px;
+  height: 44px;
+  top: -50px;
+}
+
+.advantages-item:nth-child(2)::before {
+  background-image: url("/img/icons/multiple.png");
+  width: 52px;
+  height: 42px;
+  top: -50px;
+}
+
+.advantages-item:nth-child(3)::before {
+  background-image: url("/img/icons/bonuses.png");
+  width: 55px;
+  height: 42px;
+  top: -50px;
 }
 /*# sourceMappingURL=main.css.map */
