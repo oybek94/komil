@@ -463,7 +463,7 @@ img {
   text-decoration: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   .login-btn {
     display: none;
   }
@@ -474,6 +474,10 @@ body {
   font-weight: normal;
   color: #303030;
   background: #f4f7fa;
+}
+
+body.lock {
+  overflow: hidden;
 }
 
 ::-moz-selection {
@@ -501,6 +505,7 @@ body {
 .header {
   margin-top: 48px;
   margin-bottom: 48px;
+  z-index: 3;
 }
 
 @media screen and (max-width: 767px) {
@@ -508,6 +513,14 @@ body {
     margin-top: 24px;
     margin-bottom: 24px;
   }
+}
+
+.header.open {
+  position: relative;
+  background-color: #ffffff;
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header__container {
@@ -579,7 +592,7 @@ body {
   color: #2741d0;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   .header-right__tel {
     display: none;
   }
@@ -593,7 +606,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   .header-right__tel-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -616,7 +629,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   .humburger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -635,12 +648,65 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .top-menu {
+    display: none;
+  }
+}
+
+.top-menu.open {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.top-menu.open .top-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 180px;
+}
+
+.top-menu.open .top-menu__item {
+  margin-bottom: 40px;
+}
+
+.top-menu.open .top-menu__link {
+  color: #ffffff;
+  margin-right: 0;
+  font-size: 36px;
+}
+
+.top-menu.open::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2741d0;
+}
+
 .top-menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .top-menu__item {

@@ -1,11 +1,20 @@
 .header {
   margin-top: 48px;
   margin-bottom: 48px;
+  z-index: 3;
 
   @media screen and (max-width: 767px) {
     margin-top: 24px;
     margin-bottom: 24px;
   }
+}
+
+.header.open {
+  position: relative;
+  background-color: #ffffff;
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header__container {
@@ -62,7 +71,7 @@
     color: $link-color;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -74,7 +83,7 @@
 .header-right__tel-mobile {
   display: none;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     align-items: center;
     justify-content: center;

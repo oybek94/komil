@@ -5,6 +5,10 @@ body {
   background: #f4f7fa;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 ::selection {
   color: $button-color;
   background-color: $link-color;
