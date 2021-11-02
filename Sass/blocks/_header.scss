@@ -1,0 +1,53 @@
+.header {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo__wrapper {
+  margin-right: 62px;
+}
+
+.header-logo__link {
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.header-logo__text {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 167%;
+  color: $primary-color;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right__tel {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 112%;
+  color: $primary-color;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $link-color;
+  }
+}
+
+.login-btn__wrapper {
+  margin-left: 36px;
+}

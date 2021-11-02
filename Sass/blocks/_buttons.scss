@@ -1,0 +1,20 @@
+.btn {
+  border-radius: 15px;
+  color: $button-color;
+  background: $button-bg-color;
+  &:hover,
+  &:focus {
+    background: linear-gradient(315deg, #2641d1 11.53%, #3333a3 74.32%);
+  }
+
+  &:active {
+    background: linear-gradient(45deg, #2641d1 11.53%, #3333a3 74.32%);
+  }
+}
+
+.login-btn {
+  padding: 16px 32px;
+  font-weight: bold;
+  color: $button-color;
+  text-decoration: none;
+}
