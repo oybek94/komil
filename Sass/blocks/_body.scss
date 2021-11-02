@@ -1,5 +1,11 @@
 body {
   font-family: $main-font;
+  font-weight: normal;
   color: $primary-color;
   background: #f4f7fa;
+}
+
+::selection {
+  color: $button-color;
+  background-color: $link-color;
 }
