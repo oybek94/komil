@@ -661,6 +661,8 @@ body.lock {
   height: 100%;
   top: 0;
   left: 0;
+  overflow-y: auto;
+  background-color: #f4f7fa;
 }
 
 .top-menu.open .top-menu__list {
@@ -682,9 +684,13 @@ body.lock {
 }
 
 .top-menu.open .top-menu__link {
-  color: #ffffff;
+  color: #2741d0;
   margin-right: 0;
   font-size: 36px;
+}
+
+.top-menu.open .login-btn {
+  display: block;
 }
 
 .top-menu.open::before {
@@ -694,7 +700,6 @@ body.lock {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #2741d0;
 }
 
 .top-menu__list {
@@ -707,6 +712,10 @@ body.lock {
   padding: 0;
   position: relative;
   z-index: 2;
+}
+
+.top-menu__item > .login-btn {
+  display: none;
 }
 
 .top-menu__item {
