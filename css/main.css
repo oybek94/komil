@@ -463,6 +463,12 @@ img {
   text-decoration: none;
 }
 
+@media screen and (max-width: 500px) {
+  .login-btn {
+    display: none;
+  }
+}
+
 body {
   font-family: "Gotham Pro", sans-serif;
   color: #303030;
@@ -475,9 +481,22 @@ body {
   padding: 0 40px;
 }
 
+@media screen and (max-width: 620px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
 .header {
   margin-top: 48px;
   margin-bottom: 48px;
+}
+
+@media screen and (max-width: 620px) {
+  .header {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
 }
 
 .header__container {
@@ -505,8 +524,20 @@ body {
   margin-right: 62px;
 }
 
+@media screen and (max-width: 890px) {
+  .header-logo__wrapper {
+    margin-right: 16px;
+  }
+}
+
 .header-logo__link:active {
   opacity: 0.6;
+}
+
+@media screen and (max-width: 767px) {
+  .header-logo__desc {
+    display: none;
+  }
 }
 
 .header-logo__text {
@@ -537,7 +568,59 @@ body {
   color: #2741d0;
 }
 
+@media screen and (max-width: 500px) {
+  .header-right__tel {
+    display: none;
+  }
+}
+
 .login-btn__wrapper {
   margin-left: 36px;
+}
+
+.header-right__tel-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .header-right__tel-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    border-radius: 7px;
+    background: linear-gradient(326.06deg, #2641d1 11.53%, #3333a3 74.32%);
+  }
+}
+
+.humburger {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .humburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    border: none;
+    background: #dee6ef;
+  }
 }
 /*# sourceMappingURL=main.css.map */
