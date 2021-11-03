@@ -8,18 +8,33 @@
   background: #f4f7fa;
   box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
   border-radius: 10px;
+
+  @media screen and (max-width: 767px) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 32px 32px 32px;
+    margin-right: auto;
+    width: 100%;
+    bottom: -100px;
+  }
 }
 .advantages-list {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 .advantages-item {
   position: relative;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 150%;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 162%;
 
   &::before {
     content: "";
@@ -27,13 +42,13 @@
     top: 0;
     left: 0;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
   }
 
   &:first-child::before {
     background-image: url("/img/icons/time24.svg");
     width: 50px;
-    height: 44px;
+    height: 50px;
     top: -50px;
   }
 
@@ -49,5 +64,16 @@
     width: 55px;
     height: 42px;
     top: -50px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 90px;
+
+    &:first-child::before,
+    &:nth-child(2)::before,
+    &:nth-child(3)::before {
+      top: 30px;
+      left: calc(50% - 26px);
+    }
   }
 }

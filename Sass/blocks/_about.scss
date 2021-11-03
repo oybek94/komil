@@ -13,4 +13,12 @@
   background-repeat: no-repeat;
   background-position-x: 90%;
   background-size: 465px;
+
+  @media screen and (max-width: 767px) {
+    background-position: center top;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background-size: 280px;
+  }
 }
