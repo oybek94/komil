@@ -1,0 +1,93 @@
+.support {
+  margin-bottom: 144px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 72px;
+  }
+}
+
+.support-title {
+  margin-bottom: 31px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 24px;
+  }
+}
+
+.support-cards {
+  display: flex;
+  align-items: flex-start;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.support-card {
+  position: relative;
+  max-width: 344px;
+  padding: 167px 32px 32px 32px;
+  background: #ffffff;
+  border-radius: 10px;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    padding: 167px 24px 24px 24px;
+    max-width: 100%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:not(:last-child) {
+    margin-right: 16px;
+
+    @media screen and (max-width: 767px) {
+      margin-right: 0;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.support-card__bussines.support-card::before {
+  background-image: url("/img/team.png");
+}
+
+.support-card__startup.support-card::before {
+  background-image: url("/img/startup.png");
+}
+
+.support-card__personal.support-card::before {
+  background-image: url("/img/family.png");
+}
+
+.support-card__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+
+.support-card__desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 150%;
+  color: $secondary-color;
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
+}
