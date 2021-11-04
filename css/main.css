@@ -1037,11 +1037,11 @@ body.lock {
 .stats__innumbers {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 140px 94px;
-      grid-template-columns: 140px 94px;
-  -ms-grid-rows: 132px 110px;
-      grid-template-rows: 132px 110px;
-  grid-column-gap: 16px;
+  -ms-grid-columns: 217px 192px;
+      grid-template-columns: 217px 192px;
+  -ms-grid-rows: 156px 171px;
+      grid-template-rows: 156px 171px;
+  grid-column-gap: 23px;
   grid-row-gap: 16px;
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -1061,18 +1061,14 @@ body.lock {
   padding: 32px 29px 32px 32px;
 }
 
-.stats__innumbers-wrapper:nth-child(2),
-.stats__innumbers-wrapper:nth-child(3) {
-  padding: 24px;
-  width: 179px;
-  height: 135px;
+.stats__innumbers-wrapper:nth-child(2) {
+  position: relative;
+  left: -14px;
 }
 
-@media screen and (max-width: 767px) {
-  .stats__innumbers-wrapper:nth-child(2),
-  .stats__innumbers-wrapper:nth-child(3) {
-    width: 124px;
-  }
+.stats__innumbers-wrapper:nth-child(3) {
+  position: relative;
+  top: -32px;
 }
 
 .stats__innumbers-wrapper:nth-child(4) {
@@ -1085,6 +1081,18 @@ body.lock {
   .stats__innumbers-wrapper:nth-child(3),
   .stats__innumbers-wrapper:nth-child(4) {
     padding: 16px;
+  }
+}
+
+.stats__innumbers-wrapper__inner {
+  padding: 24px;
+  width: 179px;
+  height: 135px;
+}
+
+@media screen and (max-width: 767px) {
+  .stats__innumbers-wrapper__inner {
+    width: 124px;
   }
 }
 

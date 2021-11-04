@@ -105,9 +105,9 @@
 
 .stats__innumbers {
   display: grid;
-  grid-template-columns: 140px 94px;
-  grid-template-rows: 132px 110px;
-  grid-column-gap: 16px;
+  grid-template-columns: 217px 192px;
+  grid-template-rows: 156px 171px;
+  grid-column-gap: 23px;
   grid-row-gap: 16px;
   align-items: end;
   justify-items: end;
@@ -124,15 +124,14 @@
   padding: 32px 29px 32px 32px;
 }
 
-.stats__innumbers-wrapper:nth-child(2),
-.stats__innumbers-wrapper:nth-child(3) {
-  padding: 24px;
-  width: 179px;
-  height: 135px;
+.stats__innumbers-wrapper:nth-child(2) {
+  position: relative;
+  left: -14px;
+}
 
-  @media screen and (max-width: 767px) {
-    width: 124px;
-  }
+.stats__innumbers-wrapper:nth-child(3) {
+  position: relative;
+  top: -32px;
 }
 
 .stats__innumbers-wrapper:nth-child(4) {
@@ -145,6 +144,16 @@
 .stats__innumbers-wrapper:nth-child(4) {
   @media screen and (max-width: 767px) {
     padding: 16px;
+  }
+}
+
+.stats__innumbers-wrapper__inner {
+  padding: 24px;
+  width: 179px;
+  height: 135px;
+
+  @media screen and (max-width: 767px) {
+    width: 124px;
   }
 }
 
