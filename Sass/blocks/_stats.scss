@@ -2,14 +2,13 @@
   margin-bottom: 48px;
 
   @media screen and (max-width: 767px) {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 }
 .stats__container {
   display: flex;
   align-items: center;
   position: relative;
-  padding: 0 148px;
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
@@ -54,7 +53,8 @@
 }
 
 .stats__info {
-  flex-basis: 513px;
+  flex-basis: 50%;
+  width: 100%;
 
   @media screen and (max-width: 767px) {
     flex-basis: 100%;
@@ -89,6 +89,7 @@
   @media screen and (max-width: 767px) {
     font-size: 24px;
     line-height: 30px;
+    max-width: 100%;
   }
 }
 
@@ -103,6 +104,7 @@
   @media screen and (max-width: 767px) {
     font-size: 12px;
     line-height: 150%;
+    max-width: 100%;
   }
 }
 
