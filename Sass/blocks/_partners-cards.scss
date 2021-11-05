@@ -1,0 +1,75 @@
+.partners-cards {
+  margin-bottom: 31px;
+}
+.partners-cards__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partners-card {
+  position: relative;
+  padding: 48px 187px 48px 360px;
+  background: #ffffff;
+  border-radius: 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 35%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 115px 24px 24px 24px;
+  }
+}
+
+.partners-card__gift.partners-card::before {
+  background-image: url("/img/gift.png");
+}
+
+.partners-card__useful.partners-card::before {
+  background-image: url("/img/useful.png");
+}
+
+.partners-card__wide.partners-card::before {
+  background-image: url("/img/wide.png");
+}
+
+.partners-card__study.partners-card::before {
+  background-image: url("/img/study.png");
+}
+
+.partners-cards__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 225%;
+  color: $secondary-color;
+}
+
+.partners-cards__desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: $secondary-color;
+}
+
+.partners-cards__desc-list {
+  padding-left: 32px;
+}
+
+.partners-cards__desc-item {
+  font-size: 14px;
+  line-height: 143%;
+  color: $secondary-color;
+}

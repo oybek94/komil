@@ -1511,4 +1511,114 @@ body.lock {
   line-height: 150%;
   color: #404040;
 }
+
+.partners-info {
+  min-height: 400px;
+  margin-bottom: 76px;
+  padding-top: 88px;
+  padding-bottom: 80px;
+  background: url("/img/contract.png") left center no-repeat, url("/img/globus.png") right center no-repeat, -webkit-gradient(linear, left bottom, left top, from(rgba(39, 56, 149, 0.6)), to(rgba(39, 56, 149, 0.6))), -webkit-gradient(linear, left top, right top, from(#273895), color-stop(57.63%, rgba(26, 39, 105, 0)));
+  background: url("/img/contract.png") left center no-repeat, url("/img/globus.png") right center no-repeat, linear-gradient(0deg, rgba(39, 56, 149, 0.6), rgba(39, 56, 149, 0.6)), linear-gradient(90deg, #273895 0%, rgba(26, 39, 105, 0) 57.63%);
+  background-size: contain, cover;
+}
+
+.partners-info__title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 137%;
+  color: #ffffff;
+}
+
+.partners-info__desc {
+  max-width: 321px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #e9e9e9;
+}
+
+.partners-cards {
+  margin-bottom: 31px;
+}
+
+.partners-cards__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partners-card {
+  position: relative;
+  padding: 48px 187px 48px 360px;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.partners-card:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.partners-card::before {
+  content: "";
+  position: absolute;
+  height: 35%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media screen and (max-width: 767px) {
+  .partners-card {
+    padding: 115px 24px 24px 24px;
+  }
+}
+
+.partners-card__gift.partners-card::before {
+  background-image: url("/img/gift.png");
+}
+
+.partners-card__useful.partners-card::before {
+  background-image: url("/img/useful.png");
+}
+
+.partners-card__wide.partners-card::before {
+  background-image: url("/img/wide.png");
+}
+
+.partners-card__study.partners-card::before {
+  background-image: url("/img/study.png");
+}
+
+.partners-cards__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 225%;
+  color: #404040;
+}
+
+.partners-cards__desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #404040;
+}
+
+.partners-cards__desc-list {
+  padding-left: 32px;
+}
+
+.partners-cards__desc-item {
+  font-size: 14px;
+  line-height: 143%;
+  color: #404040;
+}
 /*# sourceMappingURL=main.css.map */
