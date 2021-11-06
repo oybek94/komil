@@ -993,11 +993,11 @@ body.lock {
   }
 }
 
-.stats__container::before {
+.stats__innumbers-wrapper:nth-child(2)::before {
   content: "";
   position: absolute;
   top: -30px;
-  right: calc(50% - 530px);
+  right: calc(50% - 115px);
   width: 159px;
   height: 159px;
   background: -webkit-gradient(linear, left top, right top, color-stop(21.57%, #e1d8ff), to(#f4ecff));
@@ -1007,9 +1007,9 @@ body.lock {
 }
 
 @media screen and (max-width: 767px) {
-  .stats__container::before {
-    top: calc(50% - 10px);
-    right: calc(50% - 150px);
+  .stats__innumbers-wrapper:nth-child(2)::before {
+    top: calc(50% - 70px);
+    right: calc(50% - 85px);
     width: 100px;
     height: 100px;
   }
@@ -1420,9 +1420,11 @@ body.lock {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 @media screen and (max-width: 767px) {
@@ -1447,12 +1449,14 @@ body.lock {
 
 .benefits-card:not(:last-child) {
   margin-right: 19px;
+  margin-bottom: 19px;
 }
 
 @media screen and (max-width: 767px) {
   .benefits-card:not(:last-child) {
     margin-right: 0;
     margin-bottom: 8px;
+    min-width: 100%;
   }
 }
 
@@ -1472,7 +1476,7 @@ body.lock {
 
 @media screen and (max-width: 767px) {
   .benefits-card {
-    max-width: 100%;
+    min-width: 100%;
     min-height: 282px;
   }
 }
@@ -1582,6 +1586,7 @@ body.lock {
   padding: 48px 187px 48px 360px;
   background: #ffffff;
   border-radius: 20px;
+  min-width: 100%;
 }
 
 .partners-card:not(:last-child) {
@@ -1599,6 +1604,13 @@ body.lock {
   background-position: right center;
 }
 
+@media screen and (max-width: 1024px) {
+  .partners-card::before {
+    background-size: 130px;
+    background-position: center;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .partners-card::before {
     height: 20%;
@@ -1606,6 +1618,12 @@ body.lock {
     margin-top: 24px;
     background-size: contain;
     background-position: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .partners-card {
+    padding: 30px 40px 30px 230px;
   }
 }
 

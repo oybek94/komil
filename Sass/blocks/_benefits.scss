@@ -13,7 +13,8 @@
 .benefits-cards {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
@@ -31,10 +32,12 @@
 
   &:not(:last-child) {
     margin-right: 19px;
+    margin-bottom: 19px;
 
     @media screen and (max-width: 767px) {
       margin-right: 0;
       margin-bottom: 8px;
+      min-width: 100%;
     }
   }
 
@@ -51,7 +54,7 @@
   }
 
   @media screen and (max-width: 767px) {
-    max-width: 100%;
+    min-width: 100%;
     min-height: 282px;
   }
 }

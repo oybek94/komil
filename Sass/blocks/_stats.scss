@@ -15,11 +15,11 @@
   }
 }
 
-.stats__container::before {
+.stats__innumbers-wrapper:nth-child(2)::before {
   content: "";
   position: absolute;
   top: -30px;
-  right: calc(50% - 530px);
+  right: calc(50% - 115px);
   width: 159px;
   height: 159px;
   background: linear-gradient(90deg, #e1d8ff 21.57%, #f4ecff 100%);
@@ -27,8 +27,8 @@
   z-index: -1;
 
   @media screen and (max-width: 767px) {
-    top: calc(50% - 10px);
-    right: calc(50% - 150px);
+    top: calc(50% - 70px);
+    right: calc(50% - 85px);
     width: 100px;
     height: 100px;
   }
