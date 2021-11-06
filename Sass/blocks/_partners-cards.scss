@@ -20,12 +20,20 @@
   &::before {
     content: "";
     position: absolute;
-    height: 35%;
-    width: 100%;
+    height: 100%;
+    width: 30%;
     top: 0;
     left: 0;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: right center;
+
+    @media screen and (max-width: 767px) {
+      height: 20%;
+      width: 100%;
+      margin-top: 24px;
+      background-size: contain;
+      background-position: center;
+    }
   }
 
   @media screen and (max-width: 767px) {
