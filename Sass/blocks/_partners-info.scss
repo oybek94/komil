@@ -8,6 +8,16 @@
     linear-gradient(0deg, rgba(39, 56, 149, 0.6), rgba(39, 56, 149, 0.6)),
     linear-gradient(90deg, #273895 0%, rgba(26, 39, 105, 0) 57.63%);
   background-size: contain, cover;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    min-height: 274px;
+    padding-top: 48px;
+    background: url("/img/contract.png") center bottom no-repeat,
+      url("/img/globus.png") right center no-repeat,
+      linear-gradient(0deg, rgba(39, 56, 149, 0.6), rgba(39, 56, 149, 0.6)),
+      linear-gradient(90deg, #273895 0%, rgba(26, 39, 105, 0) 57.63%);
+  }
 }
 
 .partners-info__title {
@@ -15,6 +25,11 @@
   font-size: 32px;
   line-height: 137%;
   color: #ffffff;
+
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .partners-info__desc {
@@ -22,4 +37,9 @@
   font-size: 16px;
   line-height: 150%;
   color: #e9e9e9;
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 150%;
+  }
 }

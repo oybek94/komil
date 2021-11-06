@@ -1522,6 +1522,16 @@ body.lock {
   background-size: contain, cover;
 }
 
+@media screen and (max-width: 767px) {
+  .partners-info {
+    text-align: center;
+    min-height: 274px;
+    padding-top: 48px;
+    background: url("/img/contract.png") center bottom no-repeat, url("/img/globus.png") right center no-repeat, -webkit-gradient(linear, left bottom, left top, from(rgba(39, 56, 149, 0.6)), to(rgba(39, 56, 149, 0.6))), -webkit-gradient(linear, left top, right top, from(#273895), color-stop(57.63%, rgba(26, 39, 105, 0)));
+    background: url("/img/contract.png") center bottom no-repeat, url("/img/globus.png") right center no-repeat, linear-gradient(0deg, rgba(39, 56, 149, 0.6), rgba(39, 56, 149, 0.6)), linear-gradient(90deg, #273895 0%, rgba(26, 39, 105, 0) 57.63%);
+  }
+}
+
 .partners-info__title {
   font-weight: bold;
   font-size: 32px;
@@ -1529,11 +1539,25 @@ body.lock {
   color: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+  .partners-info__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
 .partners-info__desc {
   max-width: 321px;
   font-size: 16px;
   line-height: 150%;
   color: #e9e9e9;
+}
+
+@media screen and (max-width: 767px) {
+  .partners-info__desc {
+    font-size: 12px;
+    line-height: 150%;
+  }
 }
 
 .partners-cards {
