@@ -1674,4 +1674,13 @@ body.lock {
   line-height: 143%;
   color: #404040;
 }
+
+.footer {
+  padding: 32px 0;
+  border-top: 1px solid #dee6ef;
+}
+
+.footer-logo {
+  margin-right: 48px;
+}
 /*# sourceMappingURL=main.css.map */
